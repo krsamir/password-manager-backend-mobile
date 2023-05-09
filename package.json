@@ -1,16 +1,16 @@
 {
   "name": "backend",
+  "workspaces": [
+    "server"
+  ],
   "version": "1.0.0",
-  "type": "module",
-  "main": "index.js",
-  "license": "MIT",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "yarn worspace server start",
+    "dev": "yarn workspace server dev"
   },
-  "dependencies": {
-    "@apollo/server": "^4.7.1",
-    "dotenv": "^16.0.3",
-    "graphql": "^16.6.0"
-  }
+  "main": "index.js",
+  "repository": "https://github.com/krsamir/password-manager-backend-mobile.git",
+  "author": "Samir Kumar <46542096+krsamir@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true
 }
